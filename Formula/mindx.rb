@@ -5,8 +5,8 @@
 #   DotNetAge/mindx  → e.g. DotNetAge/mindx
 #   2.3.0      → e.g. 2.2.0
 #   v2.3.0          → e.g. v2.2.0
-#   3a01775a760d7a1e92cfabdc35aaf9708af7d7446d28cfcf7b79dc63e074c2a6 → SHA256 of darwin-amd64 tarball
-#   3436690bd411ed37bbdaef8313826f2f21d1a44e28f5bbd694b6e4342b1cb3fd → SHA256 of darwin-arm64 tarball
+#   c7cf4638a4a6c291698491170bc6f4cf0a6243835c18518a534631ca308dd82b → SHA256 of darwin-amd64 tarball
+#   ec922a18b7fde248e2fc69b421ede44962845d82774b72886212cf6ccc0ff220 → SHA256 of darwin-arm64 tarball
 #
 # Tap repo: https://github.com/DotNetAge/homebrew-mindx
 
@@ -19,12 +19,12 @@ class Mindx < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/DotNetAge/mindx/releases/download/v2.3.0/mindx-2.3.0-darwin-amd64.tar.gz"
-      sha256 "3a01775a760d7a1e92cfabdc35aaf9708af7d7446d28cfcf7b79dc63e074c2a6"
+      sha256 "c7cf4638a4a6c291698491170bc6f4cf0a6243835c18518a534631ca308dd82b"
     end
 
     if Hardware::CPU.arm?
       url "https://github.com/DotNetAge/mindx/releases/download/v2.3.0/mindx-2.3.0-darwin-arm64.tar.gz"
-      sha256 "3436690bd411ed37bbdaef8313826f2f21d1a44e28f5bbd694b6e4342b1cb3fd"
+      sha256 "ec922a18b7fde248e2fc69b421ede44962845d82774b72886212cf6ccc0ff220"
     end
   end
 
