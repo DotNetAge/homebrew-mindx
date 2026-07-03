@@ -1,12 +1,12 @@
 # typed: false
 # frozen_string_literal: true
-# Template: DotNetAge/mindx/v2.3.12
+# Template: DotNetAge/mindx/v2.3.13
 # Placeholders (replaced by CI/release script):
 #   DotNetAge/mindx  → e.g. DotNetAge/mindx
-#   2.3.12      → e.g. 2.2.0
-#   v2.3.12          → e.g. v2.2.0
-#   1f6f86d35489e68246ffdfb39254187df2e5b081f1fba8fb30d4170f7b0afeb2 → SHA256 of darwin-amd64 tarball
-#   e2b2d3afb589285422df9b56d4845f87817e1a6d37dc088f43fcc8adf06ba6a5 → SHA256 of darwin-arm64 tarball
+#   2.3.13      → e.g. 2.2.0
+#   v2.3.13          → e.g. v2.2.0
+#   934e29f3544ea04ebb2fb979ca47b99de9f5c16974be4c3a8587bf279e782784 → SHA256 of darwin-amd64 tarball
+#   9e2d40f142635a9ffc4fcb1e7d18d4cf10f500fc27184f1c55891e1f56167182 → SHA256 of darwin-arm64 tarball
 #
 # Tap repo: https://github.com/DotNetAge/homebrew-mindx
 
@@ -14,19 +14,19 @@ class Mindx < Formula
   desc "MindX - AI-native multi-agent conversation platform"
   homepage "https://github.com/DotNetAge/mindx"
   license "MIT"
-  version "2.3.12"
+  version "2.3.13"
 
   depends_on "onnxruntime"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/DotNetAge/mindx/releases/download/v2.3.12/mindx-2.3.12-darwin-amd64.tar.gz"
-      sha256 "1f6f86d35489e68246ffdfb39254187df2e5b081f1fba8fb30d4170f7b0afeb2"
+      url "https://github.com/DotNetAge/mindx/releases/download/v2.3.13/mindx-2.3.13-darwin-amd64.tar.gz"
+      sha256 "934e29f3544ea04ebb2fb979ca47b99de9f5c16974be4c3a8587bf279e782784"
     end
 
     if Hardware::CPU.arm?
-      url "https://github.com/DotNetAge/mindx/releases/download/v2.3.12/mindx-2.3.12-darwin-arm64.tar.gz"
-      sha256 "e2b2d3afb589285422df9b56d4845f87817e1a6d37dc088f43fcc8adf06ba6a5"
+      url "https://github.com/DotNetAge/mindx/releases/download/v2.3.13/mindx-2.3.13-darwin-arm64.tar.gz"
+      sha256 "9e2d40f142635a9ffc4fcb1e7d18d4cf10f500fc27184f1c55891e1f56167182"
     end
   end
 
